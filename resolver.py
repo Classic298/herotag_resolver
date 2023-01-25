@@ -1,6 +1,6 @@
 """This code uses the threading library to create a new thread for each herotag to be resolved.
 Each thread runs the function resolve_herotag which takes the herotag and a list of addresses as
-arguments. The function uses the requests library to send a GET request to the Elrond API to
+arguments. The function uses the requests library to send a GET request to the MultiversX API to
 resolve the herotag into an address. If the status code of the response is not 200, it means the
 herotag could not be resolved and it prints an informative message, otherwise, it adds the herotag
 and the resolved address to the list of addresses.
