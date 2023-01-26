@@ -18,13 +18,10 @@ def resolve_herotags(filepath, new_filepath):
     addresses = []
     # Opens the provided file in read only mode
     with open(filepath, "r") as file:
-        i = 0
         threads = []
         for line in file:
-            i+=1
-            # API allows 150 requests as a burst. After that, the API rate limit of 2 requests per second applies.
-            if i >= 149:
-                time.sleep(0.5)
+            # API rate limit
+            time.sleep(1.5)
             # Get next line
             herotag = line.strip()
             # Start thread and call the resolve function
