@@ -21,7 +21,7 @@ def resolve_herotags(filepath, new_filepath):
         threads = []
         for line in file:
             # API rate limit
-            time.sleep(1.5)
+            time.sleep(1.2)
             # Get next line
             herotag = line.strip()
             # Start thread and call the resolve function
