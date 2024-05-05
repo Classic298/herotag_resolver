@@ -3,11 +3,6 @@ Simple script that resolves provided herotags and saves the addresses
 
 # Usage
 
-# Option 1:
-Go to the github io page and use it there
-
-# Option 2 (Python)
-
 ## Step 1
 Create a file named `herotags.txt` in the same folder as the python file.  
 Put all of your herotags in it, one herotag per line.
